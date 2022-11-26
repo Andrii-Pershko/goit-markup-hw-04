@@ -494,6 +494,7 @@ nav {
   padding-left: 16px;
   padding-top: 32px;
   padding-bottom: 32px;
+  border-bottom: 0.5px solid #F4F4FD;
 }
 
 .filter-menu {
