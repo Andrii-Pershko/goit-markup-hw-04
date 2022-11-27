@@ -1,14 +1,7 @@
-html {
-  box-sizing: border-box;
-  width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #e5e5e5;
-}
-
 *,
 *::before,
 *::after {
+  box-sizing: border-box;
   box-sizing: inherit;
 }
 
@@ -182,6 +175,8 @@ nav {
 
 .hero {
   color: var(--bacground-color-text);
+  margin: 0 auto;
+  max-width: 1600px;
   background-color: var(--color-title-background);
   background-image: linear-gradient(to right, #2e2f42b3, #2e2f42b3),
     url(../images/people-office.jpg);
@@ -216,13 +211,13 @@ nav {
 /* Section after hero */
 
 .icon-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
   border-radius: 4px;
-  padding-left: 100px;
   background-color: #f4f4fd;
-  padding-right: 100px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-bottom: 8px;
 }
 
 .ico {
@@ -407,6 +402,8 @@ nav {
 .button:focus {
   color: var(--alternative-color);
   background-color: var(--color-studio);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .footer-data {
@@ -429,8 +426,6 @@ nav {
 .filter-item {
   margin-right: 20px;
   border-radius: 4px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .filter-item:hover,
@@ -483,7 +478,7 @@ nav {
 }
 
 .person-data {
-  margin-top: 32px;
+  padding: 32px 16px 36px;
 }
 
 .item-works > a > img {
@@ -494,7 +489,7 @@ nav {
   padding-left: 16px;
   padding-top: 32px;
   padding-bottom: 32px;
-  border-bottom: 0.5px solid #F4F4FD;
+  border-bottom: 0.5px solid #f4f4fd;
 }
 
 .filter-menu {
@@ -523,12 +518,6 @@ nav {
   margin-right: 24px;
 }
 
-.activ {
-  margin-bottom: 36px;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
 /* Customers */
 
 .list-customers {
@@ -538,8 +527,7 @@ nav {
 .partner {
   width: 168px;
   height: 88px;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
+
   margin-right: 24px;
 }
 
@@ -548,7 +536,9 @@ nav {
 }
 
 .partner > a {
-  color: #8E8F99;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  color: #8e8f99;
   width: 100%;
   height: 100%;
   display: flex;
@@ -556,12 +546,12 @@ nav {
   align-items: center;
 }
 
-.partner:hover,
-.partner:focus {
+.partner > a:hover,
+.partner > a:focus {
   border-color: var(--color-studio);
 }
 
-.partner a:hover ,
+.partner a:hover,
 .partner a:focus {
   color: var(--color-studio);
 }
